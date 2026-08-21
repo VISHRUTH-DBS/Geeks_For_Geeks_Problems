@@ -1,0 +1,11 @@
+class Solution {
+    public int thirdLargest(List<Integer> arr) {
+        // code here
+        int n = arr.size();
+        Collections.sort(arr);
+        if(n<3)
+        return -1;
+        return arr.get(n-3);
+        
+    }
+}
